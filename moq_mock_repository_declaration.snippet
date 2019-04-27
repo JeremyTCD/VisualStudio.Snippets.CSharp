@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Moq Mock Repository Declaration</Title>
+            <Author>Jering</Author>
+            <Description>Declaration for a MockRepository.</Description>
+            <Shortcut>jeringmmrd</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="csharp"><![CDATA[private readonly MockRepository _mockRepository = new MockRepository(MockBehavior.Default) { DefaultValue = DefaultValue.Mock };]]></Code>
+            <Imports>
+                <Import>
+                    <Namespace>Moq</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

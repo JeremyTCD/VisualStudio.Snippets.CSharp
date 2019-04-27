@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>XML Docs Argument Null Exception</Title>
+            <Author>Jering</Author>
+            <Description>Argument null exception.</Description>
+            <Shortcut>jeringxdane</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="csharp">
+                <![CDATA[/// <exception cref="ArgumentNullException">Thrown if <paramref name="$ParameterName$"/> is null.</exception>]]></Code>
+            <Declarations>
+                <Literal>
+                    <ID>ParameterName</ID>
+                    <ToolTip>Name of parameter.</ToolTip>
+                    <Default>parameterName</Default>
+                </Literal>
+            </Declarations>
+            <Imports>
+                <Import>
+                    <Namespace>System</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Constructor Assignment</Title>
+            <Author>Jering</Author>
+            <Description>Assigns argument to a field.</Description>
+            <Shortcut>jeringca</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="csharp"><![CDATA[_$ArgumentName$ = $ArgumentName$ ?? throw new ArgumentNullException(nameof($ArgumentName$));]]></Code>
+            <Declarations>
+                <Literal>
+                    <ID>ArgumentName</ID>
+                    <ToolTip>Name of the argument.</ToolTip>
+                    <Default>argumentName</Default>
+                </Literal>
+            </Declarations>
+            <Imports>
+                <Import>
+                    <Namespace>System</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

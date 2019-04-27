@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Argument Null Guard</Title>
+            <Author>Jering</Author>
+            <Description>Null guard.</Description>
+            <Shortcut>jeringang</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="csharp">
+                <![CDATA[if ($ArgumentName$ == null)
+            {
+                throw new ArgumentNullException(nameof($ArgumentName$));
+            }]]></Code>
+            <Declarations>
+                <Literal>
+                    <ID>ArgumentName</ID>
+                    <ToolTip>Name of the argument.</ToolTip>
+                    <Default>argumentName</Default>
+                </Literal>
+            </Declarations>
+            <Imports>
+                <Import>
+                    <Namespace>System</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

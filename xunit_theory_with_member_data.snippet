@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Xunit Theory With Member Data</Title>
+            <Author>Jering</Author>
+            <Description>Theory with member data.</Description>
+            <Shortcut>jeringxtmd</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="csharp"><![CDATA[[Theory]
+        [MemberData(nameof($TestMethodName$_Data))]
+        public void $TestMethodName$()
+        {
+            // Arrange
+
+            // Act
+
+            // Assert
+        }
+
+        public static IEnumerable<object[]> $TestMethodName$_Data()
+        {
+            return new object[][]
+            {
+
+            };
+        }]]></Code>
+            <Imports>
+                <Import>
+                    <Namespace>System.Collections.Generic</Namespace>
+                </Import>
+            </Imports>
+            <Declarations>
+                <Literal>
+                    <ID>TestMethodName</ID>
+                    <ToolTip>Name of test method.</ToolTip>
+                    <Default>Method_Name</Default>
+                </Literal>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
